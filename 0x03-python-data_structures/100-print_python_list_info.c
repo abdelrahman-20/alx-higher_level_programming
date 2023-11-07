@@ -5,10 +5,10 @@
  * @p: A Python Object
 */
 
-void print_python_list_info(pyobject *p)
+void print_python_list_info(PyObject *p)
 {
 	int size, alloc, i;
-	pyobject *obj;
+	PyObject *obj;
 
 	size = Py_SIZE(p);
 	alloc = ((PyListObject *)p)->allocated;
