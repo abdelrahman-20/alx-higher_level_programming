@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
+    if not a_dictionary:
+        return None
+
     keys_list = list(a_dictionary.keys())
     higher_value = a_dictionary[keys_list[0]]
     key = ""
