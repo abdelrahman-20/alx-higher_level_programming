@@ -21,7 +21,7 @@ class Square:
             TypeError: If Not Int
             ValueError: If Lower Than Zero
         """
-        return self.size
+        return self.__size
 
     @size.setter
     def size(self, value):
@@ -29,7 +29,7 @@ class Square:
             raise TypeError("size must be an integer")
         if value < 0:
             raise ValueError("size must be >= 0")
-        self.size = value
+        self.__size = value
 
     def area(self):
         """A Function To Get Area of Square.
@@ -37,5 +37,5 @@ class Square:
         Returns:
             The Size Square.
         """
-        return self.size ** 2
+        return self.__size ** 2
 
