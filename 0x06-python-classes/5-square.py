@@ -9,7 +9,7 @@ class Square:
         """Class Constructor.
 
         Args:
-            size: Length of Square Side.
+            size (int): Length of Square Side.
         """
         self.size = size
 
@@ -18,8 +18,8 @@ class Square:
         """Property for size.
 
         Raises:
-            TypeError: If Not Int.
-            ValueError: If Lower Than Zero.
+            TypeError: If not an integer.
+            ValueError: If less than zero.
         """
         return self.__size
 
@@ -31,12 +31,11 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
-
     def area(self):
         """Area Function.
 
         Returns:
-            The Area of Square
+            int: The Area of Square.
         """
         return self.__size ** 2
 
@@ -44,6 +43,5 @@ class Square:
         """Print Square."""
         for i in range(self.size):
             for j in range(self.size):
-                print("#", end="\n" if j is self.size - 1 and i != j else "")
+                print("#", end="\n" if j == self.size - 1 and i != j else " ")
         print()
-
