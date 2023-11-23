@@ -17,14 +17,19 @@ class Square:
     def size(self):
         """ Property for size.
 
-        Raises:
-            TypeError: If Not Int
-            ValueError: If Lower Than Zero
+        Returns:
+            The Size.
         """
         return self.__size
 
     @size.setter
     def size(self, value):
+        """ A Setter Property
+
+        Raises:
+            TypeError: If Not Int
+            ValueError: If Lower Than Zero
+        """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         if value < 0:
