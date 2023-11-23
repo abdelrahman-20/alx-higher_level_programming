@@ -15,7 +15,12 @@ class Square:
 
     @property
     def size(self):
-        """ Property for size."""
+        """ Property for size.
+
+        Raises:
+            TypeError: If Not Int
+            ValueError: If Lower Than Zero
+        """
         return self.size
 
     @size.setter
@@ -29,7 +34,7 @@ class Square:
     def area(self):
         """A Function To Get Area of Square.
 
-        Return:
+        Returns:
             The Size Square.
         """
         return self.size ** 2
