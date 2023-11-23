@@ -5,7 +5,6 @@
 class Square:
     """Defining Class."""
 
-
     def __init__(self, size=0):
         """Class Constructor.
 
