@@ -10,7 +10,7 @@ class Square:
         """Class Constructor.
 		
         Args:
-            size: Length of Square Side.
+            size (int): Length of Square Side.
         """
         self.size = size
 
@@ -37,6 +37,6 @@ class Square:
         """Area Function.
         
         Return:
-            The Area of Square
+            int: The Area of Square
         """
         return self.__size ** 2
