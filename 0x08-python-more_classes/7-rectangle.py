@@ -57,7 +57,7 @@ class Rectangle:
         if self.width == 0 and self.height == 0:
             return ""
         return ((str(Rectangle.print_symbol) * self.width + "\n") *
-                self.height)
+                self.height)[:-1]
 
     def __repr__(self):
         """Returns A Representation of Class."""
