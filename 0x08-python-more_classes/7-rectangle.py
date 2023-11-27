@@ -54,10 +54,10 @@ class Rectangle:
 
     def __str__(self):
         """Print The Rectangle with Hashes."""
-        if self.__width == 0 and self.__height == 0:
+        if not self.width or not self.height:
             return ""
-        return ((str(Rectangle.print_symbol) * self.__width + "\n") *
-                self.__height)[:-1]
+        return ((str(self.print_symbol) * self.width + "\n") *
+                self.height)[:-1]
 
     def __repr__(self):
         """Returns A Representation of Class."""
