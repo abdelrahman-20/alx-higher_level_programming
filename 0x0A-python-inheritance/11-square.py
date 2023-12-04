@@ -17,5 +17,5 @@ class Square(Rectangle):
         return self.__size ** 2
 
     def __str__(self):
-        """A method to print."""
-        return "[square] {}/{}".format(self.__size, self.__size)
+        """Returns a printing message"""
+        return "[square]" + str(self.__size) + "/" + str(self.__size)
