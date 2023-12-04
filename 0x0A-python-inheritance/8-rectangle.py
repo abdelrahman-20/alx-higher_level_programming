@@ -11,8 +11,8 @@ class Rectangle(BaseGeometry):
         """Initializing A New Rectangle.
 
         Args:
-            width: The Width.
-            height: The Height.
+            width (int): The Width.
+            height (int): The Height.
         """
         self.integer_validator("width", width)
         self._width = width
