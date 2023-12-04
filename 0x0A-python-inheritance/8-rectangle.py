@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Module For A Method."""
-
 BaseGeometry = __import__("7-base_geometry.py").BaseGeometry
 
 
@@ -15,6 +14,6 @@ class Rectangle(BaseGeometry):
             height (int): The Height.
         """
         self.integer_validator("width", width)
-        self._width = width
+        self.__width = width
         self.integer_validator("height", height)
-        self._height = height
+        self.__height = height
