@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module For A Method."""
+"""Module for a class."""
 Rectangle = __import__("9-rectangle.py").Rectangle
 
 
