@@ -6,7 +6,7 @@ class BaseGeometry:
     """This is Empty Class."""
     def area(self):
         """A Function To Get The Area and Not Implemented Yet."""
-        raise Exception("area() is not implemented")
+        raise Exception("area() is not implemented")i
 
     def integer_validator(self, name, value):
         """A Function To Validate The value
@@ -19,7 +19,7 @@ class BaseGeometry:
             TypeError: if value is not integer.
             ValueError: if value is less than or equal 0.
         """
-        if not isinstance(value, int):
+        if type(value) != int:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
