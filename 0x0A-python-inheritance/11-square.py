@@ -1,0 +1,21 @@
+#!/usr/bin/python3
+"""Module For A Method."""
+Rectangle = __import__("9-rectangle").Rectangle
+
+
+class Square(Rectangle):
+    """A class that represents a square."""
+
+    def __init__(self, size):
+        """Constructor."""
+        self.integer_validator("size", size)
+        self.__size = size
+        super().__init__(size, size)
+
+    def area(self):
+        """Method for area of square."""
+        return self.__size ** 2
+
+    def __str__(self):
+        """A method to print."""
+        return "[square] {}/{}".format(self.__size, self.__size)
