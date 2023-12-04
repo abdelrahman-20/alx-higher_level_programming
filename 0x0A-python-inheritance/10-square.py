@@ -4,18 +4,15 @@ Rectangle = __import__("9-rectangle.py").Rectangle
 
 
 class Square(Rectangle):
-    """A Class That Inherits BaseGeometry Class."""
+    """A class that represents a square."""
 
     def __init__(self, size):
-        """Initializing A New Rectangle.
-
-        Args:
-            size (int): The Size of each Side.
-        """
+        """Constructor."""
         self.integer_validator("size", size)
-        super().__init__(size, size)
         self.__size = size
+        super().__init__(size, size)
 
     def area(self):
-        """Returns The Area of The Rectangle."""
+        """Method for area of square."""
         return self.__size ** 2
+
