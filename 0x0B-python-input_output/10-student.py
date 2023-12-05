@@ -12,12 +12,18 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """Returns a dictionary representation."""
+        """Dictionary representation.
+
+        Args:
+            attrs: The attributes to get.
+
+            Returns a dictionary representation.
+        """
         try:
             for attr in attrs:
                 if type(attr) is not str:
                     return self.__dict__
-        except:
+        except Exception:
             return self.__dict__
 
         my_dict = dict()
