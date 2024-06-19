@@ -2,4 +2,4 @@
 class Rectangle {
 }
 
-exports.Rectangle
+exports.Rectangle;
