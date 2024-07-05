@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Fetches https://alx-intranet.hbtn.io/status using requests package"""
+"""Fetches URL using requests package"""
 
 
 if __name__ == '__main__':
