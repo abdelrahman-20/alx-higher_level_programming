@@ -19,3 +19,5 @@ if __name__ == "__main__":
             print("[{}] {}".format(_id, name))
         else:
             print("No result")
+    else:
+        print("Not a valid JSON")
